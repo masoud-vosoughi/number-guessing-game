@@ -65,11 +65,16 @@ def play_game(secret_number, max_attempts):
                 print(f"The correct number was {secret_number}.")
 
 
-print("Welcome to the Number Guessing Game!")
-print("I'm thinking of a number between 1 and 100.")
+def main():
+    print("Welcome to the Number Guessing Game!")
+    print("I'm thinking of a number between 1 and 100.")
 
-secret_number = random.randint(1, 100)
+    secret_number = random.randint(1, 100)
 
-difficulty_name, max_attempts = select_difficulty()
+    _, max_attempts = select_difficulty()
 
-play_game(secret_number, max_attempts)
+    play_game(secret_number, max_attempts)
+
+
+if __name__ == "__main__":
+    main()
