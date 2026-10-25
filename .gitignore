@@ -1,0 +1,12 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Ruff cache
+.ruff_cache/
+
+# macOS
+.DS_Store
